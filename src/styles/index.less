@@ -1,0 +1,78 @@
+/**
+ * @tailwind 为 Tailwind CSS 的语法
+ * [中文官网](https://tailwindcss.cn/)
+ * [英文官网](https://tailwindcss.com/)
+ */
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 4px; // Tailwind CSS 中 mt-10 是 2.5rem, 设置 html 根字体大小为 4px 后 2.5rem 会转为为 10 px, 恰好和 mt-10 对应, 方便开发, 其它数值以此类推
+}
+
+/**
+  * 设置所有元素为 box-sizing: border-box;
+  * 已有 box-sizing 属性的元素不生效（防止第三方插件内的 box-sizing 被覆盖
+  */
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    /* font: 12px/150% Arial, Verdana, "\5b8b\4f53"; */
+    font-size: 14px;
+    line-height: 1.2;
+    /* font-family: "Microsoft YaHei", "simsun", "宋体"; */
+    /* 为避免版权问题，尽量不要在商业网站上使用 font-family 属性 */
+}
+
+/**
+  * clearfix 清除浮动
+  */
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /* IE/7/6 */
+}
+
+/**
+ * 定义常用宽度
+ */
+.w-100 {
+    width: 100px;
+}
+
+.w-120 {
+    width: 120px;
+}
+
+.w-140 {
+    width: 140px;
+}
+
+.w-160 {
+    width: 160px;
+}
+
+.w-180 {
+    width: 180px;
+}
+
+.w-200 {
+    width: 200px;
+}

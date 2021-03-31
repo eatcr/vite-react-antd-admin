@@ -1,0 +1,31 @@
+@import '../../styles/theme.less';
+
+.layout-basic {
+    .layout-basic-sider {
+        overflow: auto;
+        height: 100vh;
+        // position: fixed;
+        // left: 0;
+    }
+    .layout-basic-container {
+        .layout-basic-header {
+            padding: 0;
+            box-shadow:2px 2px 5px #ddd;
+            background-color: #fff;
+            .trigger {
+                padding: 0 24px;
+                font-size: 18px;
+                line-height: 64px;
+                cursor: pointer;
+                transition: color 0.3s;
+                &:hover {
+                    color: @primary-color;
+                }
+            }
+        }
+        .layout-basic-content {
+            margin: 24px 16px;
+            padding: 24px;
+        }
+    }
+}
